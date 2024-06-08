@@ -3,13 +3,6 @@ const Post = require("../model/Post");
 const CustomController=require('../controllers/CustomController');
 
 const customController=new CustomController();
-
-const title = faker.lorem.words();
-const body = faker.lorem.paragraph();
-const date = faker.date.recent();
-
-
-
 describe('Api Test Controller', () => {
 
     test('Get all photos - positive', async () => {
